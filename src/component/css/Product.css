@@ -1,0 +1,94 @@
+#product {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+form-search {
+    display: flex;
+    width: 400px;
+    height: 35px;
+}
+input[type="search"] {
+    width: 400px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 10px;
+    outline: none;
+    padding: 0 0.6rem;
+}
+.option label {
+    margin-right: 20px;
+}
+select {
+    margin-bottom: 1em;
+    padding: 0.25em;
+    border: 0;
+    border-bottom: 2px solid currentcolor;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    border-radius: 0;
+}
+select:focus {
+    outline: 0;
+    border-bottom-color: red;
+}
+select:active {
+    outline: 0;
+    border-bottom-color: red;
+}
+.card {
+    min-width: 300px;
+    min-height: 400px;
+    border: 1px solid #eee;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 2px 8px 20px #ddd;
+    margin: 10px;
+    transition: 0.5s linear;
+}
+.card:hover {
+    box-shadow: none;
+}
+.card img {
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    display: block;
+    object-fit: cover;
+}
+.card a {
+    text-decoration: none;
+    color: #333;
+}
+.card a:hover {
+    color: crimson;
+}
+.card a h3 {
+    text-decoration: none;
+    color: #333;
+}
+.card a h3 :hover {
+    text-decoration: none;
+    color: crimson;
+}
+.card span {
+    color: crimson;
+}
+.card p {
+    margin: 10px 0;
+}
+.card button {
+    border: none;
+    outline: none;
+    background: #333;
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 15px 0;
+}
