@@ -1,0 +1,9 @@
+role: admin
+  username:	admin
+  pass:		123
+role: user
+  username:	user01
+  pass:		123
+role: user
+  username:	user02
+  pass:		123

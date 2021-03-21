@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { ProductContext } from '../Context';
-import '../css/Product.css'
+import '../css/Detail.css'
 import { Link } from 'react-router-dom';
 function Cart() {
   const [categories, setCateID, products, search, setSearch, onHandleSearch, cateID, setProducts, clicked, setClicked, auth, setAuth, addCart, cart, setCart] = useContext(ProductContext);

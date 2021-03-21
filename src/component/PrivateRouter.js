@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Redirect, Route } from 'react-router-dom';
+import { ProductContext } from './Context';
 
-const PrivateRouter = ({ component: Component, ...rest }) => {
-    const [auth, setAuth] = useState(false);
+const PrivateRouter = ({ auth, component: Component, ...rest }) => {
     return (
         <Route
             {...rest}

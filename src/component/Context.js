@@ -23,18 +23,6 @@ const ProductContextProvider = (props) => {
         console.log(error);
       })
   }, [])
-  //get Cart
-  useEffect(() => {
-    const url = "https://603c5222f4333a0017b67665.mockapi.io/carts";
-    axios.get(url)
-      .then((res) => {
-        const { data } = res;
-        setCart(data);
-      })
-      .catch((error) => {
-        console.log(error);
-      })
-  }, [])
   useEffect(() => {
     if (cateID === -1) {
       setProducts([]);
@@ -56,12 +44,10 @@ const ProductContextProvider = (props) => {
     setSearch(newFilter.search);
   }
   const addCart = (val) => {
-    const url = `https://603c5222f4333a0017b67665.mockapi.io/carts`;
-    axios({
-      url: url,
-      method: "POST",
-      data: val
-    })
+    setCart([
+      ...cart,
+      val
+    ])
   }
   return (
     <ProductContext.Provider value={[categories, setCateID, products, search, setSearch, onHandleSearch, cateID, setProducts, clicked, setClicked, auth, setAuth, addCart, cart, setCart]}>
